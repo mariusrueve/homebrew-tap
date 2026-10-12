@@ -1,6 +1,6 @@
 cask "labroute" do
   version "1.0.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "624bda50fa6604e5b58d90e40cabeb575bd64a594940afa4988326c79681c2af"
 
   url "https://github.com/mariusrueve/labroute/releases/download/v#{version}/LabRoute-#{version}.zip"
   name "LabRoute"
