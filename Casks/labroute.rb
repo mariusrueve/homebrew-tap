@@ -19,8 +19,9 @@ cask "labroute" do
 
   # Disconnect first so LabRoute restores the previous proxy settings.
   uninstall script: {
-    executable:   "#{appdir}/LabRoute.app/Contents/MacOS/labroute",
-    args:         ["quit", "--wait"],
+    executable:   "/bin/sh",
+    args:         ["-c", '[ -x "$0" ] && "$0" quit --wait; exit 0',
+                   "#{appdir}/LabRoute.app/Contents/MacOS/labroute"],
     must_succeed: false,
   }
 
