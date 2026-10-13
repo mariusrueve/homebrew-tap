@@ -25,7 +25,12 @@ cask "labroute" do
     must_succeed: false,
   }
 
-  zap trash: "~/Library/Application Support/LabRoute"
+  # The Include line in ~/.ssh/config and the ~/.zshrc line are harmless once
+  # these are gone: ssh ignores a missing Include, the shell line checks for the app.
+  zap trash: [
+    "~/.ssh/labroute",
+    "~/Library/Application Support/LabRoute",
+  ]
 
   caveats <<~EOS
     LabRoute is not notarized. On first launch, allow it once in
