@@ -1,6 +1,6 @@
 cask "labvpn" do
-  version "0.3.1"
-  sha256 "6be591b83051f00f5164cf36d5d3ed4441cc9d187f07451f673877f67fba678b"
+  version "0.3.2"
+  sha256 "fe6a8180cc08d3f0e9e5c1e34f3012fee6939fd9a627ff95d123a0ff6ee664b1"
 
   url "https://github.com/mariusrueve/labvpn/releases/download/v#{version}/labvpn-#{version}.zip"
   name "labvpn"
